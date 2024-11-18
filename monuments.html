@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c8cee764ff897e74e6f2d9cf152522c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c8cee764ff897e74e6f2d9cf152522c8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c8cee764ff897e74e6f2d9cf152522c8 = L.map(
+                "map_c8cee764ff897e74e6f2d9cf152522c8",
+                {
+                    center: [40.0, -100.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27d82e5616a4fc248fe3621b065c1bda = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_27d82e5616a4fc248fe3621b065c1bda.addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var marker_9a4f274fcadeddd4c756a0e14d954c33 = L.marker(
+                [38.889805, -77.009056],
+                {}
+            ).addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var icon_be063af3cfd3d4093744ea3d16aade85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a4f274fcadeddd4c756a0e14d954c33.setIcon(icon_be063af3cfd3d4093744ea3d16aade85);
+        
+    
+        var popup_39763e78541215b2d7ca188b944ae397 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_418d560bb554056010cddf3f090eec89 = $(`<div id="html_418d560bb554056010cddf3f090eec89" style="width: 100.0%; height: 100.0%;">United States Capitol</div>`)[0];
+                popup_39763e78541215b2d7ca188b944ae397.setContent(html_418d560bb554056010cddf3f090eec89);
+            
+        
+
+        marker_9a4f274fcadeddd4c756a0e14d954c33.bindPopup(popup_39763e78541215b2d7ca188b944ae397)
+        ;
+
+        
+    
+    
+            var marker_63b6328f1ec18e8be60e9859d0225a5f = L.marker(
+                [38.897957, -77.03656],
+                {}
+            ).addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var icon_522378844f8ee1c7d4ea4980d16addf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63b6328f1ec18e8be60e9859d0225a5f.setIcon(icon_522378844f8ee1c7d4ea4980d16addf7);
+        
+    
+        var popup_aa582045f3aad54faad1b6417bb36ee7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af52a0f95e3d9928e2e575e5d2bee1d2 = $(`<div id="html_af52a0f95e3d9928e2e575e5d2bee1d2" style="width: 100.0%; height: 100.0%;">The White House</div>`)[0];
+                popup_aa582045f3aad54faad1b6417bb36ee7.setContent(html_af52a0f95e3d9928e2e575e5d2bee1d2);
+            
+        
+
+        marker_63b6328f1ec18e8be60e9859d0225a5f.bindPopup(popup_aa582045f3aad54faad1b6417bb36ee7)
+        ;
+
+        
+    
+    
+            var marker_6c5cf07be4b7fa22548703e147b257d3 = L.marker(
+                [38.900497, -77.007507],
+                {}
+            ).addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var icon_ec79b035be817789e484d2172632492d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c5cf07be4b7fa22548703e147b257d3.setIcon(icon_ec79b035be817789e484d2172632492d);
+        
+    
+        var popup_46d51acf39a1a8d5d47dba0dc2053c18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d46e697fd9df81f767ecccfe455bc38e = $(`<div id="html_d46e697fd9df81f767ecccfe455bc38e" style="width: 100.0%; height: 100.0%;">NoMa (North of Massachusetts Avenue)</div>`)[0];
+                popup_46d51acf39a1a8d5d47dba0dc2053c18.setContent(html_d46e697fd9df81f767ecccfe455bc38e);
+            
+        
+
+        marker_6c5cf07be4b7fa22548703e147b257d3.bindPopup(popup_46d51acf39a1a8d5d47dba0dc2053c18)
+        ;
+
+        
+    
+    
+            var marker_be20020e76e51dc71fb29d14609acad8 = L.marker(
+                [38.942142, -77.025955],
+                {}
+            ).addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var icon_93f1aff2c23e7562b81d0d3763bd65a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be20020e76e51dc71fb29d14609acad8.setIcon(icon_93f1aff2c23e7562b81d0d3763bd65a9);
+        
+    
+        var popup_c851c88b6d910d024600c3ef3466552f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dac3c63d82cdb8a28be7c2ff54e27c8 = $(`<div id="html_1dac3c63d82cdb8a28be7c2ff54e27c8" style="width: 100.0%; height: 100.0%;">The District of Columbia Public Library</div>`)[0];
+                popup_c851c88b6d910d024600c3ef3466552f.setContent(html_1dac3c63d82cdb8a28be7c2ff54e27c8);
+            
+        
+
+        marker_be20020e76e51dc71fb29d14609acad8.bindPopup(popup_c851c88b6d910d024600c3ef3466552f)
+        ;
+
+        
+    
+    
+            var marker_fa3af5d4d54f285532fdcaaa057335eb = L.marker(
+                [38.8903, -77.0352],
+                {}
+            ).addTo(map_c8cee764ff897e74e6f2d9cf152522c8);
+        
+    
+            var icon_f5831d0c7e54bb1ab83385c7333851f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa3af5d4d54f285532fdcaaa057335eb.setIcon(icon_f5831d0c7e54bb1ab83385c7333851f0);
+        
+    
+        var popup_92ffc8fdaceb1751ac4fb837a396a33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_552c6c29619992e81b868ba2afaca1d9 = $(`<div id="html_552c6c29619992e81b868ba2afaca1d9" style="width: 100.0%; height: 100.0%;">Geography of Washington, D.C. (Zero Milestone on The Ellipse)</div>`)[0];
+                popup_92ffc8fdaceb1751ac4fb837a396a33d.setContent(html_552c6c29619992e81b868ba2afaca1d9);
+            
+        
+
+        marker_fa3af5d4d54f285532fdcaaa057335eb.bindPopup(popup_92ffc8fdaceb1751ac4fb837a396a33d)
+        ;
+
+        
+    
+</script>
+</html>
